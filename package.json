@@ -28,5 +28,10 @@
   "homepage": "https://github.com/jurca/szn-select-button#readme",
   "dependencies": {
     "@jurca/szn-elements": "0.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-fbjs-opensource": "^1.0.0",
+    "jest": "^22.0.4"
   }
 }
