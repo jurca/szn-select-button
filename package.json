@@ -1,0 +1,32 @@
+{
+  "name": "szn-select-button",
+  "version": "0.0.0",
+  "description": "UI button for the accessible HTML selectbox with customizable UI: szn-select.",
+  "main": "szn-select-button.es6.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurca/szn-select-button.git"
+  },
+  "keywords": [
+    "web",
+    "component",
+    "html",
+    "szn",
+    "seznam",
+    "seznam.cz",
+    "select",
+    "szn-select"
+  ],
+  "author": "Martin Jurča <martin.jurca@firma.seznam.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jurca/szn-select-button/issues"
+  },
+  "homepage": "https://github.com/jurca/szn-select-button#readme",
+  "dependencies": {
+    "@jurca/szn-elements": "0.0.4"
+  }
+}
