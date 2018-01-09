@@ -17,7 +17,7 @@
 
   let stylesInjected = false
 
-  SznElements['szn-select-button'] = class SznSelect {
+  SznElements['szn-select-button'] = class SznSelectButton {
     constructor(rootElement) {
       this.OPENING_POSITION = OPENING_POSITION
 
