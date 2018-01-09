@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/jurca/szn-select-button.git"
   },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
   "keywords": [
     "web",
     "component",
