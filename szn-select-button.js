@@ -150,6 +150,10 @@
   }
 
   function updateDisabledStatus(instance) {
+    if (!instance._select) {
+      return
+    }
+
     if (instance._select.disabled) {
       instance._root.setAttribute('disabled', '')
     } else {
