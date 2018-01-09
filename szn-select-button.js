@@ -115,7 +115,7 @@
       return
     }
 
-    instance._observer.observe(this._select, {
+    instance._observer.observe(instance._select, {
       childList: true,
       attributes: true,
       characterData: true,
