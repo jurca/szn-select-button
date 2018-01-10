@@ -56,7 +56,7 @@
 
     onUnmount() {
       this._observer.disconnect()
-      removeEventListeners()
+      removeEventListeners(this)
     }
 
     setSelectElement(selectElement) {
