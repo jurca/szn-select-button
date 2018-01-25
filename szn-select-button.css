@@ -14,6 +14,7 @@ szn-select-button {
     background: var(--szn-select-button-background-color, #ffffff);
 
     cursor: pointer;
+    user-select: none;
 }
 
 szn-select-button[data-szn-select-button-open] {
