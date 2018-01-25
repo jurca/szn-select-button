@@ -68,6 +68,6 @@ szn-select-button [data-szn-select-button-mark]:after {
     content: var(--szn-select-button-icon-closed, "▼");
 }
 
-szn-select-button [data-szn-select-button-open] [data-szn-select-button-mark]:after {
+szn-select-button[data-szn-select-button-open] [data-szn-select-button-mark]:after {
     content: var(--szn-select-button-icon-opened, "▲");
 }
