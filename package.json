@@ -1,6 +1,6 @@
 {
   "name": "@jurca/szn-select-button",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "UI button for the accessible HTML selectbox with customizable UI: szn-select.",
   "main": "szn-select-button.es6.js",
   "scripts": {
