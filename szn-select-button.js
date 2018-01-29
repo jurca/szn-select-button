@@ -5,8 +5,6 @@
   const CSS_STYLES = `
 %{CSS_STYLES}%
   `
-  const CSS_STYLES_TAG = 'data-styles--szn-select-button'
-
   const OPENING_POSITION = {
     UP: 'OPENING_POSITION.UP',
     DOWN: 'OPENING_POSITION.DOWN',
@@ -14,8 +12,6 @@
   if (Object.freeze) {
     Object.freeze(OPENING_POSITION)
   }
-
-  let stylesInjected = false
 
   SznElements['szn-select-button'] = class SznSelectButton {
     constructor(rootElement) {
@@ -34,20 +30,16 @@
       rootElement.setOpen = this.setOpen.bind(this)
       rootElement.setOpeningPosition = this.setOpeningPosition.bind(this)
 
-      rootElement.appendChild(buildUI(this))
-
       this._onChange = onChange.bind(null, this)
 
-      if (!stylesInjected) {
-        const stylesContainer = document.createElement('style')
-        stylesContainer.innerHTML = CSS_STYLES
-        stylesContainer.setAttribute(CSS_STYLES_TAG, '')
-        document.head.appendChild(stylesContainer)
-        stylesInjected = true
-      }
+      SznElements.injectStyles(CSS_STYLES, 'szn-select-button')
     }
 
     onMount() {
+      if (!this._label) {
+        this._root.appendChild(buildUI(this))
+      }
+
       observeSelect(this)
       addEventListeners(this)
       updateLabel(this)
