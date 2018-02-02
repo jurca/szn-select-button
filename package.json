@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/jurca/szn-select-button#readme",
   "peerDependencies": {
-    "@jurca/szn-elements": "0.0.6"
+    "@jurca/szn-elements": "^1.0.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
