@@ -36,10 +36,6 @@
     }
 
     onMount() {
-      if (!this._label) {
-        this._root.appendChild(buildUI(this))
-      }
-
       observeSelect(this)
       addEventListeners(this)
       updateLabel(this)
@@ -52,6 +48,14 @@
     }
 
     setSelectElement(selectElement) {
+      if (selectElement === this._select) {
+        return
+      }
+
+      if (!this._label) {
+        this._root.appendChild(buildUI(this))
+      }
+
       if (this._select) {
         removeEventListeners(this)
         this._observer.disconnect()
