@@ -70,18 +70,18 @@
 
     setOpen(isOpen) {
       if (isOpen) {
-        this._root.setAttribute('data-szn-select-button-open', '')
+        this._root.setAttribute('data-szn-select-button--open', '')
       } else {
-        this._root.removeAttribute('data-szn-select-button-open')
-        this._root.removeAttribute('data-szn-select-button-open-at-top')
+        this._root.removeAttribute('data-szn-select-button--open')
+        this._root.removeAttribute('data-szn-select-button--open-at-top')
       }
     }
 
     setOpeningPosition(openingPosition) {
       if (openingPosition === OPENING_POSITION.UP) {
-        this._root.setAttribute('data-szn-select-button-open-at-top', '')
+        this._root.setAttribute('data-szn-select-button--open-at-top', '')
       } else {
-        this._root.removeAttribute('data-szn-select-button-open-at-top')
+        this._root.removeAttribute('data-szn-select-button--open-at-top')
       }
     }
   }
@@ -123,8 +123,8 @@
   function buildUI(instance) {
     return SznElements.buildDom(
       `
-        <szn- data-szn-select-button-label data-szn-ref></szn->
-        <szn- data-szn-select-button-mark></szn->
+        <szn- data-szn-select-button--label data-szn-ref></szn->
+        <szn- data-szn-select-button--mark></szn->
       `,
       label => {
         instance._label = label
