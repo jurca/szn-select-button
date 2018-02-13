@@ -9,7 +9,7 @@ szn-select-button {
     height: 100%;
     box-sizing: border-box;
 
-    color: var(--szn-selec-button--text-color, #000000);
+    color: var(--szn-select-button--text-color, #000000);
 
     background: var(--szn-select-button--background-color, #ffffff);
 
